@@ -1,0 +1,43 @@
+.main-page {
+}
+.main-menu {
+	position: fixed;
+	top: 0;
+	height: 96px;
+	width:100%;
+	border:1px solid #999;
+	background-color: #fff;
+	&__list-box {
+		@extend %desktopPage;
+	}
+	&__list {
+		list-style: none;
+	}
+	&__item {
+		display:inline-block;
+	}
+	&__cart-box {
+
+	}
+	&__cart {
+
+	}
+	&__checkout {
+
+	}
+}
+
+.content {
+	@extend %desktopPage;
+	margin-top: 110px;
+}
+
+.bottom-bar {
+	margin-top: 50px;
+	border:1px solid #999;
+	// width:100%;
+	&__copy {
+		@extend %desktopPage;
+		color: #666;
+	}
+}

@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Volumes/Praca/MojeOsobiste/FrontEndProjects/YoungSkilledTest/app/config/routing_dev.yml

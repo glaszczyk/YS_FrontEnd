@@ -1,0 +1,21 @@
+// reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+// universal styles (for text mostly)
+.title {
+	&__level1 {
+		@extend %title1;
+	}
+	&__level2 {
+		@extend %title2;
+	}
+	&__level3 {
+		@extend %title3;
+	}
+}

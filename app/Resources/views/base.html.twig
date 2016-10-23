@@ -6,35 +6,39 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" href="{{ asset('bundles/app/css/main.css') }}" />
-        <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <!-- <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script   src="{{ asset('bundles/app/js/main.js') }}"></script>
-
     </head>
-    <body>
-    <header>
-        <div class="menu">
-            <ul>
-                <li>MenuItem 1</li>
-                <li>MenuItem 2</li>
-                <li>MenuItem 3</li>
-                <li>MenuItem 4</li>
-                <li>MenuItem 5</li>
-                <li>MenuItem 6</li>
-                <li>MenuItem 7</li>
-                <li>MenuItem 8</li>
-                <li>MenuItem 9</li>
-                <li>MenuItem 10</li>
-                <li>MenuItem 11</li>
-                <li>MenuItem 12</li>
+    <body class="main-page">
+    <header class="main-menu">
+        <div class="main-menu__list-box">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">MenuItem 1</li>
+                <li class="main-menu__item">MenuItem 2</li>
+                <li class="main-menu__item">MenuItem 3</li>
+                <li class="main-menu__item">MenuItem 4</li>
+                <li class="main-menu__item">MenuItem 5</li>
+                <li class="main-menu__item">MenuItem 6</li>
+                <li class="main-menu__item">MenuItem 7</li>
+                <li class="main-menu__item">MenuItem 8</li>
+                <li class="main-menu__item">MenuItem 9</li>
+                <li class="main-menu__item">MenuItem 10</li>
+                <li class="main-menu__item">MenuItem 11</li>
+                <li class="main-menu__item">MenuItem 12</li>
             </ul>
-            <ul>
-                <li><a href="/cart">Go to Checkout (0)</a></li>
+            <ul class="main-menu__cart-box">
+                <li class="main-menu__cart"><a class="main-menu__checkout" href="/cart">Go to Checkout (<span id="itemsnumber">0</span>)</a></li>
+                <button class="main-menu__empty-cart">Empty cart</button>
             </ul>
         </div>
     </header>
+    <main class="content">
         {% block body %}{% endblock %}
-    <footer>
-        Copyrights
+    </main>
+    <footer class="bottom-bar"> 
+        <p class="bottom-bar__copy">Copyrights</p>
     </footer>
 
         {% block javascripts %}{% endblock %}

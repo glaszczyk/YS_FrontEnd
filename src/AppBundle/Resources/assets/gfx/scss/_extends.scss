@@ -1,0 +1,33 @@
+// Extends
+%body {
+	color: $colorGrey;
+	font-size: $textSize;
+	font-weight: 700;
+}
+%title1 {
+	color: $colorGrey;
+	font-size: $textSize * 2.25;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+%title2 {
+	color: $colorGrey;
+	font-size: $textSize + 1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;	
+	font-weight: 700;
+}
+%title3 {
+	color: $colorGrey;
+	font-size: $textSize - 6;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+%desktopPage {
+	width: 960px;
+	margin: 0 auto;
+}

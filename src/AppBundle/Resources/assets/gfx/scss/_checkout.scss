@@ -1,0 +1,128 @@
+.checkout-page {
+	@extend %desktopPage;
+	&__left,
+	&__right {
+		width: 40%;
+	}
+	&__title {
+		text-transform: uppercase;
+		margin-top: 55px;
+	}
+	&__collect-data {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__delivery-address {
+		
+	}
+	&__order {
+	}
+	&__order-summary {
+
+	}
+	&__separator {
+		margin-bottom: 50px;
+	}
+	&__summary-detail {
+		display: flex;
+		justify-content: space-between;
+		&-label {
+
+		}
+		&-value {
+
+		}
+	}
+
+}
+
+.data {
+	&__input-label {
+		@extend %title3;
+		display: block;
+		margin-top: 22px;
+		&:after {
+			content: ' •';
+			color: $colorSecondary;
+			font-size: $textSize;
+		}
+		&--not-required {
+			@extend %title3;
+			display: block;
+			margin-top: 22px;
+		}
+	}
+	&__input-text,
+	&__dropdown-select {
+		height: 51px;
+		width: 350px;
+		outline: none;
+		padding: 3px 0px 3px 17px;
+		margin: 5px 1px 3px 0px;
+		border: 2px solid #DDD;
+		border-radius: 5px;
+		font-size: $textSize + 1;
+		&:focus {
+			box-shadow: inset 0 0 2px $colorPrimary;
+			padding: 3px 0px 3px 17px;
+			margin: 5px 1px 3px 0px;
+			border: 1px solid $colorPrimary;
+			border-radius: 5px;
+		}
+	}
+	&__dropdown-select,
+	&__dropdown-select:focus {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat left white;
+		background-position-x: 320px;		
+	}
+	&__dropdown-value {
+	}
+	&__button,
+	&__button--disabled {
+		@extend %title2;
+		margin-top: 22px;
+		height: 51px;
+		width: 350px;
+		background-color: $colorPrimary;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border: none;
+		border-radius: 5px;
+		&--disabled {
+			background-color: #ccc;
+		}
+	}
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	&__details {
+
+	}
+	&__name {
+		@extend %title2;
+		text-transform: uppercase;
+	}
+	&__detail {
+		display: flex;
+		justify-content: space-between;
+		&-label {
+
+		}
+		&-value {
+
+		}
+	}
+	&__thumbnail {
+	}
+	&__image {
+		width: 80px;
+		height: 80px;
+		background-color: $colorPrimary;
+
+	}
+}
